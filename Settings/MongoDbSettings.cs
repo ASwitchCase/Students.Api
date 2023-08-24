@@ -12,7 +12,7 @@ namespace Students.Api.Settings
 
         public MongoDbSettings(IConfiguration configuration){
             this.configuration = configuration;
-            string? ConnectionString = configuration.GetConnectionString("MyConnString");
+            ConnectionString = configuration.GetConnectionString("MyConnString");
         }
         public string GetConnectionString(){
             return ConnectionString;
